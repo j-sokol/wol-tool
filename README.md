@@ -7,7 +7,14 @@ Go 1.16 or later
 To use this tool, you need to pass the MAC address and IP address as command-line parameters. Here's an example:
 
 ```
-go run main.go [MAC address] [IP address]
+
+git clone https://github.com/j-sokol/wol-tool.git
+cd wol-tool
+go build -o wol-tool cmd/main.go
+
+sudo mv ./wol-tool /usr/local/bin
+
+wol-tool [MAC address] [IP address]
 ```
 Replace [MAC address] and [IP address] with the actual MAC and IP addresses.
 
